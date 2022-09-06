@@ -1,43 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conferencia</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <div>
-            <img src="./assets/codoacodo.png" alt="Logo Codo a Codo" width="100">
-        </div>
-        <div>
-            <h2>Conf Bs As</h2>
-        </div>
+            <img src="./assets/codoacodo.png" alt="Logo Codo a Codo" class="header_logo">
+            <h2 class="title">Conf Bs As</h2>
         <nav>
-            <ul>
-                <li>La conferencia</li>
-                <li>Los oradores</li>
-                <li>El lugar y la fecha</li>
-                <li>Conviértete en orador</li>
-                <li>Comprar tickets</li>
-            </ul>
+            <a href="">La Conferencia</a>
+            <a href="">Los oradores</a>
+            <a href="">El lugar y la fecha</a>
+            <a href="">Conviértete en orador</a>
+            <a href="">Comprar tickets</a>
         </nav>
     </header>
     <main>
-        <img src="./assets/ba1.jpg" alt="">
-        <h1>Conf Bs As</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas eveniet adipisci cum ex cupiditate qui possimus, animi voluptate magnam praesentium placeat nam, modi consequuntur perspiciatis harum quae error quam!</p>
-        <input type="submit" value="Quiero ser orador">
-        <input type="submit" value="Comprar tickets">
+        <img src="./assets/ba1.jpg" alt="" class="main_img">
+        <div class="main_text">
+            <h1>Conf Bs As</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas eveniet adipisci cum ex cupiditate qui possimus, animi voluptate magnam praesentium placeat nam, modi consequuntur perspiciatis harum quae error quam!</p>
+            <input type="submit" value="Quiero ser orador">
+            <input type="submit" value="Comprar tickets">
+        </div>
+        
     </main>
     <section>
         <h3>
             Conoce a los oradores
         </h3>
+        <div>
+            <div>
+                <img src="./assets/steve.jpg" alt="">
+                <div>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                </div>
+                <h3>
+                    Steve Jobs
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ea dolor voluptates magni unde quam labore maiores delectus impedit similique ipsum, ad quod eius iusto? Nihil laborum culpa enim nulla?
+                </p>
+            </div>
+            <div>
+                <img src="./assets/bill.jpg" alt="">
+                <div>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                </div>
+                <h3>
+                    Bill Gates
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ea dolor voluptates magni unde quam labore maiores delectus impedit similique ipsum, ad quod eius iusto? Nihil laborum culpa enim nulla?
+                </p>
+            </div>
+            <div>
+                <img src="./assets/ada.jpeg" alt="">
+                <div>
+                    <span>Negocios</span>
+                    <span>Startups</span>
+                </div>
+                <h3>
+                    Ada Lovelace
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ea dolor voluptates magni unde quam labore maiores delectus impedit similique ipsum, ad quod eius iusto? Nihil laborum culpa enim nulla?
+                </p>
+            </div>
+        </div>
     </section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <section>
+        <img src="./assets/ba2.jpg" alt="">
+        <div>
+            <h4>Bs As - Octubre</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, blanditiis? Error laudantium nihil architecto enim cumque et modi iusto cum. Maxime praesentium error nesciunt deleniti esse asperiores unde maiores nemo.</p>
+            <input type="button" value="Conocé más">
+        </div>
+    </section>
+    <section>
+        <h5>
+            Conviértete en un <span>ORADOR</span>
+        </h5>
+        <P>
+            Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!
+        </P>
+        <form action="">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <div>
+                <textarea cols="30" rows="10">Sobre qué quieres hablar?</textarea>
+            </div>
+            <p>Recuerda incluir un título para tu charla.</p>
+            <input type="submit">
+        </form>
+    </section>
+    <footer>
+        <a href="">Preguntas frecuentes</a>
+        <a href="">Contáctanos</a>
+        <a href="">Prensa</a>
+        <a href="">Conferencias</a>
+        <a href="">Términos y condiciones</a>
+        <a href="">Privacidad</a>
+        <a href="">Estudiantes</a>
+    </footer>
 </body>
 </html>
