@@ -3,6 +3,7 @@ html{
 }
 
 header{
+    position: relative;
     width: 100%;
     height: 100px;
     background-color:  #323b41 ;
@@ -12,16 +13,25 @@ header{
 
 .header_logo{
     width: 100px;
-    margin:auto auto auto 20px;
-    
+    /*margin:auto auto auto 20px;*/
+    top: 30%;
+    right: auto;
+    bottom: auto;
+    left: 3%;
+    position: absolute;
 }
 
 .title{
     display: inline;
+    position: absolute;
+    top: 30%;
+    right: auto;
+    left: 10%;
 }
 
 nav{
     display: inline-block;
+    position/*////////////////////////////////////aquí!!!!!!!!!!!!!*/
 }
 
 nav a{
@@ -31,11 +41,39 @@ nav a{
 main{
    position: relative;
    border: 2px solid blue;
+   /*background-image: linear-gradient(to right, rgba(53, 58, 64, 1), rgba(53, 58, 64, 0.5), url(./assets/ba1.jpg));*/
+   width: 100%;
+   height: 80vh;
+   background-image: linear-gradient(to right, rgba(53, 58, 64, 0.5), rgba(53, 58, 64, 0.5)), url('ba1.jpg');
+   background-size: cover;
 }
+/*
+.main{
+    background-image: linear-gradient(to right, rgba(53, 58, 64, 1), rgba(53, 58, 64, 0.5), url("ba1.jpg"));
+}*/
 
 .main_text{
     position: absolute;
-    margin:auto 5px auto auto;
+    top: 35%;
+    right: 0%;
+    bottom:auto;
+    left: auto;
+    width: 45%;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.main_p{
+    font-size: 1.2rem;
+}
+
+.title, h1,.main_p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main_img{
