@@ -88,10 +88,30 @@ h1{
     font-weight:lighter;
 }
 
+.button{
+    padding:0.6rem;
+    margin:0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 550;
+    color: white;
+}
+
+.main_button1{
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.main_button2{
+    background-color: #27A844;
+    border: none;
+}
+
 /*ORADORES*/
 
 .oradores_title{
     display: flex;
+    text-align: center;
 }
 
 .oradores_title h3{
@@ -100,8 +120,13 @@ h1{
     margin: 1rem auto;
     font-size: 0.7rem;
     font-weight: 100;
-    background-color: blue;
+}
 
+.target_title{
+    width:auto;
+    margin:1rem auto;
+    font-size: 1rem;
+    font-weight: bolder;
 }
 
 .title_bold{
@@ -128,7 +153,8 @@ overflow: hidden;
 
 .target_img{
     width: 100%;
-    height: 55%;
+    height: auto;
+    max-height: 55%;
     overflow: hidden;
 }
 
@@ -139,3 +165,34 @@ overflow: hidden;
 .target_description{
     padding: 1rem;
 }
+
+.target_description p{
+    font-size: 0.8rem;
+}
+
+.target_tag{
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+.target_tagJs{
+    background-color: #FEC107;
+    color: black;
+}
+
+.target_tagReact{
+    background-color: #15A2B4;
+}
+
+.target_tagBusiness{
+    background-color: #6C757E;
+}
+
+.target_tagStartUps{
+    background-color: #DF3444;
+}
+
+
