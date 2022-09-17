@@ -2,7 +2,7 @@ body{
     margin: 0px;
 }
 
-a,h1, h2, h3, p, span{
+a,h1, h2, h3, h4, p, span{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -148,7 +148,11 @@ padding: 0%;
 border: solid 1px #DFDFDF;
 border-radius: 5px;
 overflow: hidden;
+padding-bottom: 0%;/*Quitar si es necesario*/
+}
 
+.target_title{
+    margin-top: 0.2rem;
 }
 
 .target_img{
@@ -164,10 +168,11 @@ overflow: hidden;
 
 .target_description{
     padding: 1rem;
-}
+    }
 
 .target_description p{
     font-size: 0.8rem;
+    line-height: 1.3rem;
 }
 
 .target_tag{
@@ -195,4 +200,33 @@ overflow: hidden;
     background-color: #DF3444;
 }
 
+/*Pantalla dividida*/
+
+.about_BA{
+    display:flex;
+    flex-wrap: row wrap;
+    height: 65vh;
+}
+
+.about_BA_img{
+    width: 50vw;
+    background-image: url("./assets/honolulu.jpg");
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+}
+
+.about_BA_text{
+    width: 50vw;
+    background-color: #353A40;
+    padding: 1rem;
+}
+
+.about_BA_text p, h4{
+    color: white;
+}
+
+.about_BA_text h4{
+    font-size: larger;
+}
 
