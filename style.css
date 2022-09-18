@@ -38,12 +38,12 @@ nav{
     width: 54%;
 }
 
-nav a{
+a{
     text-decoration: none;
     color: #9A9EA1;
 }
 
-nav a:hover{
+a:hover{
     color:white;
 }
 
@@ -143,12 +143,10 @@ h1{
 }
 
 .target{
-margin:8px;
-padding: 0%;
+margin:1.2%;
 border: solid 1px #DFDFDF;
 border-radius: 5px;
 overflow: hidden;
-padding-bottom: 0%;/*Quitar si es necesario*/
 }
 
 .target_title{
@@ -168,9 +166,11 @@ padding-bottom: 0%;/*Quitar si es necesario*/
 
 .target_description{
     padding: 1rem;
+    padding: 1%;
+    margin-top: 1.2rem;
     }
 
-.target_description p{
+.target_description p, .about_BA_text p{
     font-size: 0.8rem;
     line-height: 1.3rem;
 }
@@ -209,7 +209,7 @@ padding-bottom: 0%;/*Quitar si es necesario*/
 }
 
 .about_BA_img{
-    width: 50vw;
+    width: 51vw;
     background-image: url("./assets/honolulu.jpg");
     background-size: 105%;
     background-repeat: no-repeat;
@@ -217,9 +217,9 @@ padding-bottom: 0%;/*Quitar si es necesario*/
 }
 
 .about_BA_text{
-    width: 50vw;
+    width: 49vw;
     background-color: #353A40;
-    padding: 1rem;
+    padding: 0.4rem 1rem;
 }
 
 .about_BA_text p, h4{
@@ -227,6 +227,49 @@ padding-bottom: 0%;/*Quitar si es necesario*/
 }
 
 .about_BA_text h4{
-    font-size: larger;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.about_BA_button{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    background-color: #1F4D67 ;
+
+}
+
+footer div{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 14vh;
+    margin: 0px auto;
+    color:white;
+}
+
+footer a{
+    font-size: 0.9rem;
+    max-width: 10%;
+    text-align: center;
+    color: white;
+}
+
+footer a:hover{
+    color: #DBD704;
 }
 
