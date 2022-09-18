@@ -51,15 +51,19 @@ a:hover{
     color: #26A743;
 }
 
+.nav_a_tickets:hover, footer a:hover{
+    color: #DBD704;
+}
+
 /*MAIN*/
 
 main{
    position: relative;
    width: 100%;
-   height: 88vh;
+   height: 90vh;
    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/ba1.jpg);
-   background-size: 110%;
-   background-position-y: 60%;
+   background-size: 105%;
+   background-position-y: 70%;
    background-position-x: 33%;
 }
 
@@ -70,7 +74,7 @@ main{
     bottom:auto;
     left: auto;
     width: 38%;
-    margin-right: 5%;
+    margin-right: 6%;
     text-align: right;
     line-height: 1.5em;
 }
@@ -112,12 +116,14 @@ h1{
 .oradores_title{
     display: flex;
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .oradores_title h3{
     text-transform: uppercase;
     width:auto;
-    margin: 1rem auto;
+    margin: 0 auto;
     font-size: 0.7rem;
     font-weight: 100;
 }
@@ -129,6 +135,7 @@ h1{
     font-weight: bolder;
 }
 
+
 .title_bold{
     font-size: 1.6rem;
     font-weight:bolder;
@@ -136,7 +143,7 @@ h1{
 }
 
 .oradores_targets{
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: row wrap;
     width: 75%;
@@ -144,6 +151,7 @@ h1{
 
 .target{
 margin:1.2%;
+margin-top: 0%;
 border: solid 1px #DFDFDF;
 border-radius: 5px;
 overflow: hidden;
@@ -267,9 +275,5 @@ footer a{
     max-width: 10%;
     text-align: center;
     color: white;
-}
-
-footer a:hover{
-    color: #DBD704;
 }
 
