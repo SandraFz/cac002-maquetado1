@@ -1,5 +1,10 @@
+html{
+    width: 100%;
+}
+
 body{
     margin: 0px;
+    width: 100%;
 }
 
 a,h1, h2, h3, h4, p, span{
@@ -7,7 +12,6 @@ a,h1, h2, h3, h4, p, span{
 }
 
 /*HEADER*/
-
 header{
     display: flex;
     flex-wrap: row wrap;
@@ -23,11 +27,17 @@ header{
     display: flex;
     flex-wrap: row wrap;
     margin-left: 5%;
+    background-color: blue;
 }
 
 .header_logo{
     width: 10vw;
     padding:0px;
+}
+
+.title, h1,.main_p{
+    color:white;
+    font-weight:lighter;
 }
 
 nav{
@@ -85,11 +95,6 @@ h1{
 
 .main_p{
     font-size: 1rem;
-}
-
-.title, h1,.main_p{
-    color:white;
-    font-weight:lighter;
 }
 
 .button{
@@ -275,5 +280,24 @@ footer a{
     max-width: 10%;
     text-align: center;
     color: white;
+}
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 500px) {
+    header{
+        display: block;
+        height: auto;
+        background-color:  #323b41 ;
+    }
+
+    .header_header_group{
+        margin:0px auto;
+    }
+
+    .header_logo{
+        width: 50%;
+    }
+
+    
 }
 
