@@ -1,10 +1,15 @@
+:root{
+    margin:0%;
+    padding:0%;
+}
+
 html{
-    width: 100%;
+    width: 100vw;
 }
 
 body{
     margin: 0px;
-    width: 100%;
+    width: 100vw;
 }
 
 a,h1, h2, h3, h4, p, span{
@@ -22,11 +27,15 @@ header{
     color:white;
 }
 
+.header_header{
+    margin-left: 5%;
+}
+
 .header_header_group{
     display: flex;
     flex-wrap: row wrap;
     align-items: center;
-    margin-left: 5%;
+    margin: 0%;
 }
 
 .header_logo{
@@ -39,6 +48,10 @@ header{
 .tittle, h1,.main_p{
     color:white;
     font-weight:lighter;
+}
+
+.hamb-nav{
+    display: none;
 }
 
 nav{
@@ -78,7 +91,7 @@ main{
    height: 90vh;
    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/ba1.jpg);
    background-repeat: no-repeat;
-   background-size: 105%;
+   background-size: cover;
    background-position-y: 70%;
    background-position-x: 33%;
 }
@@ -314,11 +327,17 @@ footer a{
         height: auto;
     }
 
+    .header_header{
+        display: flex;
+        flex-wrap: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .header_header_group{
-        margin:0px auto;
         justify-content:center;
         display: flex;
-        width: 50%;
+        width: 30%;
     }
    
     .header_logo{
@@ -330,8 +349,14 @@ footer a{
     .tittle{
         display: inline;
         margin-bottom: 2%;
-        align-self:flex-end;
         font-size: 1.3rem;
+    }
+
+    .hamb-nav{
+        display: inline-block;;
+        align-self: flex-end;
+        margin: auto 5% auto auto;
+        position:relative;
     }
 
     nav{
@@ -340,14 +365,18 @@ footer a{
         margin:0px auto;
         justify-content: center;
         padding:0%;
+        position: relative;
+       
     }
 
-    a{
+    nav a{
         font-size: 1rem;
         margin: 1% auto;
         width: 100%;
-        border-top:0.1rem solid #9A9EA1;
+       /* border-top:0.1rem solid #9A9EA1;*/
         padding-top:2%;
+        position:absolute;
+        top: -20px;
     }
 
     .nav_a_tickets{
@@ -356,10 +385,28 @@ footer a{
     }
 
     main{
-        height: 50px;
+        height: 50vh;
         background-size: cover;
+        justify-content: center;
     }
 
+    .main_text{
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    .main_p{
+        font-size:1.2rem;
+        }
+    
+        .oradores_targets{
+            flex-direction: column;
+            width: 60%;
+        }
+
+}
 @media screen and(max-width: 768px) {
 
 
