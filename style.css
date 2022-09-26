@@ -74,6 +74,7 @@ a{
     text-align: center;
     height: auto;
     margin: auto 0%;
+    font-size: 0.9rem;
 }
 
 a:hover{
@@ -244,7 +245,7 @@ overflow: hidden;
 }
 
 .about_BA_img{
-    width: 51vw;
+    width: 52vw;
     background-image: url("./assets/honolulu.jpg");
     background-size: 105%;
     background-repeat: no-repeat;
@@ -282,7 +283,7 @@ footer{
     display: flex;
     flex-wrap: row wrap;
     align-items: center;
-    background-color: #1F4D67 ;
+    background: linear-gradient(to right, #1C3643, #1E5372) ;
 
 }
 
@@ -324,7 +325,7 @@ footer a{
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
     header{
         flex-direction: column;
         height: auto;
