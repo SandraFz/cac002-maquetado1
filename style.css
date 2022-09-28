@@ -103,8 +103,8 @@ main{
 
 .main_text{
     position: absolute;
-    top: 30%;
-    right: 0%;
+    top: 30%; /*30%*/
+    right: 0%; 
     bottom:auto;
     left: auto;
     width: 38%;
@@ -277,6 +277,13 @@ overflow: hidden;
     border: 1px solid rgb(255, 255, 255);
 }
 
+/*FORMULARIO*/
+
+.form{
+    background-color: green;
+    border:2px solid black;
+}
+
 /*FOOTER*/
 
 footer{
@@ -389,15 +396,14 @@ footer a{
     }
 
     main{
-        height: 50vh;
         background-size: cover;
         justify-content: center;
     }
 
     .main_text{
         position: absolute;
-        width: 80%;
-        text-align: center;
+        /*width: 80%;
+        text-align: center;*/
         margin-right: 10%;
     }
 
