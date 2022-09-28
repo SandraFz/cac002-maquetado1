@@ -284,6 +284,10 @@ overflow: hidden;
     border:2px solid black;
 }
 
+.form_tittle{
+    margin-bottom: 0px;
+}
+
 /*FOOTER*/
 
 footer{
