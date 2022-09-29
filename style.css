@@ -280,12 +280,22 @@ overflow: hidden;
 /*FORMULARIO*/
 
 .form{
-    background-color: green;
-    border:2px solid black;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    width: 50vw;
 }
 
-.form_tittle{
-    margin-bottom: 0px;
+.form_span{
+    text-decoration:underline dotted;
+}
+
+.form_text, .form_input{
+
+    font-size: 0.8rem;
+}
+
+.form_text_end{
+    font-size: 0.75rem;
 }
 
 /*FOOTER*/
