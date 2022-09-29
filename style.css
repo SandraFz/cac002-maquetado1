@@ -89,6 +89,55 @@ a:hover{
     color: #DBD704;
 }
 
+/*BUTTON UP*/
+
+.up{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    width:50px;
+    height: 50px;
+    font-size: 2rem;
+    min-width: 30px;
+    min-height: 30px;
+    z-index: 8;
+    color:#323b41 ;
+    background-color: rgba(254, 203, 2);
+    border-radius: 50%;
+    animation: up;
+    animation-duration: 3000ms;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes up{
+    15%{
+        align-items: center;
+        transform: scale(105%);
+    }
+    20%{
+        align-items: flex-start; 
+        transform:scale(110%);
+    }
+    25%{
+        align-items:flex-end;
+        transform:scale(115%);
+    }
+    35%{
+        align-items: flex-start;
+        transform:scale(110%)       
+
+    }
+    40%{
+        align-items: center;
+        transform: none;
+    }
+
+}
+
 /*MAIN*/
 
 .main_image1, .main_image2, .main_image3{
@@ -100,17 +149,17 @@ a:hover{
 }
 
 .main_image1{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/ba1.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/ba1.jpg);
     background-position-y: 70%; 
 }
 
 .main_image2{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/ba2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/ba2.jpg);
     background-position-y: 100%; 
 }
 
 .main_image3{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/ba3.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/ba3.jpg);
     background-position-y: 30%;
 }
 
