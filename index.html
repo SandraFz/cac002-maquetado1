@@ -15,20 +15,46 @@
 <body>
     <!--HEADER comienza-->
     <header id="header">
-        <div class="header_header">
+        <!--<div class="header_header">
             <div class="header_header_group">
                 <img src="./assets/codoacodo.png" alt="Logo Codo a Codo" class="header_logo">
                 <h2 class="tittle">Conf Bs As</h2>
             </div>
-            <i class="fa-solid fa-bars hamb-nav"></i>
+            <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars hamb-nav"></i>
+            </div>
+            
         </div>
-        <nav>
-            <a href="#conferencia">La Conferencia</a>
-            <a href="#oradores">Los oradores</a>
-            <a href="#cita">El lugar y la fecha</a>
-            <a href="#form">Conviértete en orador</a>
-            <a href="" class="nav_a_tickets">Comprar tickets</a>
-        </nav>
+        <nav class="navbar-collapse navbar navbar-expand-md" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#conferencia">La Conferencia</a>
+            <a class="nav-link" href="#oradores">Los oradores</a>
+            <a class="nav-link" href="#cita">El lugar y la fecha</a>
+            <a class="nav-link" href="#form">Conviértete en orador</a>
+            <a class="nav-link disabled" href="" class="nav_a_tickets">Comprar tickets</a>
+            </div>
+        </nav>-->
+
+        <nav class="navbar navbar-expand-lg navbar-light w-100 justify-content-between header_nav">
+           <div class="container-fluid"   >
+               <div class="header_group">
+                <a class="navbar-brand" href="#"><img class="header_logo" src="./assets/codoacodo.png" alt=""></a>
+                <h2 class="tittle">Conf Bs As</h2>
+               </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" style=" height: 100%; width: 60%; margin:0px; padding:15px;">
+                <div class="navbar-nav w-50 justify-content-between" style="position: absolute; z-index: 10;">
+                    <a class="nav-link active w-100" href="#">La Conferencia</a>
+                    <a class="nav-link" href="#oradores">Los oradores</a>
+                    <a class="nav-link" href="#cita">El lugar y la fecha</a>
+                    <a class="nav-link" href="#form">Conviértete en orador</a>
+                    <a class="nav-link disabled" href="" class="nav_a_tickets">Comprar tickets</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <!--HEADER termina-->
     
@@ -183,7 +209,7 @@
             <a href="">Estudiantes</a>
         </div>
     </footer>
-    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
