@@ -4058,8 +4058,9 @@ textarea.form-control-lg {
 
 .navbar-collapse {
   flex-basis: 100%;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-toggler {
@@ -4067,7 +4068,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solid #9A9EA1;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -6419,10 +6420,11 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: #6c757d;
+  color: #9A9EA1;
 }
+
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64;
+  color: #9A9EA1;
 }
 
 .link-success {
@@ -6926,6 +6928,10 @@ textarea.form-control-lg {
 
 .w-50 {
   width: 50% !important;
+}
+
+.w-60 {
+  width: 65%;
 }
 
 .w-75 {
@@ -7435,8 +7441,8 @@ textarea.form-control-lg {
 }
 
 .px-4 {
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .px-5 {
