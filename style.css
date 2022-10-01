@@ -118,9 +118,9 @@ main{
 
 .main_text{
     position: absolute;
-    top: 20vh; /*20vh*/
     right: 0%; 
-    bottom:auto;
+    bottom:20vh;
+    top: 20vh; /*20vh*/
     left: auto;
     width: 38%;
     margin-right: 6%;
