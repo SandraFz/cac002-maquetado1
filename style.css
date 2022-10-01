@@ -471,36 +471,16 @@ footer a{
 
 }
 
-
 @media screen and  (max-width:767px){
+
+    .main_text{
+        width: 60%;
+    }
 
     .oradores_targets{
         flex-direction: column;
         width: 60%;
     }
 
-    a{
-        font-size: 0.9rem;
-    }
-
-    .oradores_targets{
-        width: 80%;
-    }
-
-    .about_BA{
-        height: auto;
-    }
-}
-
-
-@media screen and(max-width: 768px) {
-
-
    
-
-    
-
-    .tittle{
-        margin-left: -3%;
-    }
 }
