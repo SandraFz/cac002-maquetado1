@@ -37,7 +37,6 @@ a,h1, h2, h3, h4, p, span{
 .header_logo{
     width: 9vw;
     min-width: 100px;
-    height: auto;
 }
 
 .header_logo_a{
@@ -119,7 +118,7 @@ main{
 
 .main_text{
     position: absolute;
-    top: 20vh; /*30%*/
+    top: 20vh; /*20vh*/
     right: 0%; 
     bottom:auto;
     left: auto;
@@ -306,7 +305,7 @@ overflow: hidden;
     background-color: #DF3444;
 }
 
-/*Pantalla dividida*/
+/*PANTALLA DIVIDIDA*/
 
 .about_BA{
     display:flex;
@@ -315,21 +314,23 @@ overflow: hidden;
 }
 
 .about_BA_img{
-    width: 52vw;
-    background-image: url("./assets/honolulu.jpg");
-    background-size: 105%;
+    width: 50vw;
+    background-image: url("./assets/catalinas.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 60%;
+    background-position-x: 75%;
 }
 
 .about_BA_text{
-    width: 49vw;
-    background-color: #353A40;
+    width: 50vw;
+    height: 100%;
+    background-color: var(--color_ppl);
     padding: 0.4rem 1rem;
 }
 
-.about_BA_text p, h4{
+.about_BA_text p, h4, .about_BA_button{
     color: white;
+    margin: 4%;
 }
 
 .about_BA_text h4{
@@ -339,8 +340,6 @@ overflow: hidden;
 }
 
 .about_BA_button{
-    padding: 0.5rem;
-    margin: 0.5rem;
     font-size: 0.8rem;
     font-weight: lighter;
     background: rgba(0, 0, 0, 0);
@@ -448,6 +447,10 @@ footer a{
     
     .oradores_targets{
         width: 85%;
+    }
+
+    .form{
+        width: 60%;
     }
 
 }
