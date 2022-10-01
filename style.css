@@ -92,6 +92,7 @@ a, .nav_a, .nav-link{
 /*MAIN*/
 main{
     position: relative;
+    padding-bottom: 3%;
 }
 
 .main_image1, .main_image2, .main_image3{
@@ -118,9 +119,9 @@ main{
 
 .main_text{
     position: absolute;
-    right: 0%; 
-    bottom:20vh;
     top: 20vh; /*20vh*/
+    right: 0%; 
+    bottom:auto;
     left: auto;
     width: 38%;
     margin-right: 6%;
@@ -249,9 +250,12 @@ h1{
 .target{
 margin:1.2%;
 margin-top: 0%;
+margin-bottom: 5%;
 border: solid 1px #DFDFDF;
 border-radius: 5px;
 overflow: hidden;
+box-shadow: 5px 5px 5px var(--lightgray);
+
 }
 
 .target_title{
@@ -271,7 +275,7 @@ overflow: hidden;
 
 .target_description{
     padding: 1rem;
-    padding: 1%;
+    padding: 3%;
     margin-top: 1.2rem;
     }
 
@@ -310,7 +314,7 @@ overflow: hidden;
 .about_BA{
     display:flex;
     flex-wrap: row wrap;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .about_BA_img{
@@ -321,9 +325,12 @@ overflow: hidden;
     background-position-x: 75%;
 }
 
+.about_img_opcional{
+    display:none;
+}
+
 .about_BA_text{
     width: 50vw;
-    height: 100%;
     background-color: var(--color_ppl);
     padding: 0.4rem 1rem;
 }
@@ -473,14 +480,33 @@ footer a{
 
 @media screen and  (max-width:767px){
 
+    main{
+        background-color: blue;
+    }
+
     .main_text{
         width: 60%;
     }
 
     .oradores_targets{
-        flex-direction: column;
-        width: 60%;
+        flex-wrap: column wrap;
     }
 
-   
+   .about_BA{
+    display: block;
+   }
+
+   .about_BA_img, .about_BA_text{
+    width: 100%;
+   }
+
+   .about_BA_img{
+    height: 50vh;
+   }
+
+   .about_BA_text{
+    height: auto;
+   }
+
+ 
 }
