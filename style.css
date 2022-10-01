@@ -472,10 +472,11 @@ footer a{
 }
 
 
-@media screen and  (max-width:100px){
+@media screen and  (max-width:767px){
 
-    nav{
-        min-width: ;
+    .oradores_targets{
+        flex-direction: column;
+        width: 60%;
     }
 
     a{
