@@ -373,7 +373,6 @@ footer{
     display: flex;
     flex-wrap: row wrap;
     align-items: center;
-    background: linear-gradient(to right, #1C3643, #1E5372) ;
 
 }
 
@@ -382,10 +381,12 @@ footer div{
     flex-wrap: row wrap;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 14vh;
     margin: 0px auto;
     color:white;
+    background: linear-gradient(to right, #1C3643, #1E5372) ;
+
 }
 
 footer a{
@@ -450,7 +451,22 @@ footer a{
     }
 
     .form{
-        width: 60%;
+        width: 70%;
+    }
+
+    footer{
+        height:fit-content;
+    }
+
+    footer div{
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    footer a{
+        max-width: none;
+        margin: 1% auto;
     }
 
 }
