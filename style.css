@@ -1,83 +1,69 @@
-:root {
-    margin: 0%;
-    padding: 0%;
-    --color_ppl: #323b41;
-    /*gray*/
-    --lightgray: #9A9EA1;
-    /*light gray*/
-    --yellow_cac: rgba(254, 203, 2);
-    /*amarillo Codo a Codo*/
-    --green_detail: #27A844;
-    /*Verde de botones*/
+:root{
+    margin:0%;
+    padding:0%;
+    --color_ppl: #323b41; /*gray*/
+    --lightgray: #9A9EA1; /*light gray*/
+    --yellow_cac: rgba(254, 203, 2); /*amarillo Codo a Codo*/
+    --green_detail: #27A844; /*Verde de botones*/
 }
 
-html {
+html{
     width: 100%;
 }
 
-body {
+body{
     margin: 0px;
     width: 100%;
 }
 
-a,
-h1,
-h2,
-h3,
-h4,
-p,
-span {
+a,h1, h2, h3, h4, p, span{
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 /*HEADER*/
-.header_nav {
+.header_nav{
     background-color: var(--color_ppl);
     padding-left: 3%;
     padding-right: 3%;
 }
 
-.header_group {
+.header_group{
     display: flex;
     flex-wrap: row wrap;
     align-items: center;
 }
 
-.header_logo {
+.header_logo{
     width: 9vw;
     min-width: 100px;
 }
 
-.header_logo_a {
+.header_logo_a{
     border: none;
     max-width: 100px;
-    margin: 1rem;
-    padding: 0%;
+    margin:1rem;
+    padding:0%;
 }
 
-.tittle,
-h1,
-.main_p {
-    color: white;
-    font-weight: lighter;
+.tittle, h1,.main_p{
+    color:white;
+    font-weight:lighter;
 }
 
-.tittle {
+.tittle{
     font-size: 1.3rem;
     width: auto;
 }
-
-.header_nav_button {
+ 
+.header_nav_button{
     border: var(--yellow_cac);
 }
 
-.nav_container_a {
+.nav_container_a{
     width: 60vw;
 }
 
-a,
-.nav_a,
-.nav-link {
+a, .nav_a, .nav-link{
     text-decoration: none;
     color: var(--lightgray);
     width: auto;
@@ -89,32 +75,30 @@ a,
     font-size: 1rem;
 }
 
-.nav_a:hover {
-    color: white;
+.nav_a:hover{
+    color:white;
 }
 
-.nav_a_tickets {
+.nav_a_tickets{
     color: #26A743;
 }
 
-.nav_a_tickets:hover,
-footer a:hover {
+.nav_a_tickets:hover, footer a:hover{
     color: var(--yellow_cac);
 }
 
 /*BOTÓN UP*/
 
-#up {
+#up{
     position: fixed;
-    bottom: 0.5rem;
-    right: 0.5rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
     width: 50px;
     height: 50px;
     z-index: 10;
 
 }
-
-.up {
+.up{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +107,7 @@ footer a:hover {
     font-size: 2rem;
     min-width: 30px;
     min-height: 30px;
-    color: #323b41;
+    color:#323b41 ;
     background-color: rgba(254, 203, 2);
     border-radius: 50%;
     animation: up;
@@ -132,28 +116,25 @@ footer a:hover {
     animation-iteration-count: infinite;
 }
 
-@keyframes up {
-    15% {
+@keyframes up{
+    15%{
         align-items: center;
         transform: scale(105%);
     }
-
-    20% {
+    20%{
+        align-items: flex-start; 
+        transform:scale(110%);
+    }
+    25%{
+        align-items:flex-end;
+        transform:scale(115%);
+    }
+    35%{
         align-items: flex-start;
-        transform: scale(110%);
-    }
+        transform:scale(110%)       
 
-    25% {
-        align-items: flex-end;
-        transform: scale(115%);
     }
-
-    35% {
-        align-items: flex-start;
-        transform: scale(110%)
-    }
-
-    40% {
+    40%{
         align-items: center;
         transform: none;
     }
@@ -162,41 +143,38 @@ footer a:hover {
 
 
 /*MAIN*/
-main {
+main{
     position: relative;
     padding-bottom: 3%;
 }
 
-.main_image1,
-.main_image2,
-.main_image3 {
+.main_image1, .main_image2, .main_image3{
     width: 100%;
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.main_image1 {
+.main_image1{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/ba1.jpg);
-    background-position-y: 70%;
+    background-position-y: 70%; 
 }
 
-.main_image2 {
+.main_image2{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/ba2.jpg);
-    background-position-y: 100%;
+    background-position-y: 100%; 
 }
 
-.main_image3 {
+.main_image3{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/ba3.jpg);
     background-position-y: 30%;
 }
 
-.main_text {
+.main_text{
     position: absolute;
-    top: 20vh;
-    /*20vh*/
-    right: 0%;
-    bottom: auto;
+    top: 20vh; /*20vh*/
+    right: 0%; 
+    bottom:auto;
     left: auto;
     width: 38%;
     margin-right: 6%;
@@ -205,42 +183,40 @@ main {
     z-index: 8;
 }
 
-h1 {
+h1{
     font-size: 2rem;
 }
 
-.main_p {
+.main_p{
     font-size: 1rem;
     z-index: 9;
 }
 
-.button {
-    width: 145px;
-    ;
-    padding: 0.6rem;
-    margin: 0.5rem;
+.button{
+    width: 145px;;
+    padding:0.6rem;
+    margin:0.5rem;
     border-radius: 5px;
     font-size: 1rem;
     color: white;
 }
 
-.main_button1 {
+.main_button1{
     background: rgba(0, 0, 0, 0);
     border: 1px solid rgb(255, 255, 255);
 }
 
-.main_button1:hover,
-.about_BA_button:hover {
+.main_button1:hover, .about_BA_button:hover{
     background-color: white;
     color: black;
 }
 
-.main_button2 {
+.main_button2{
     background-color: #27A844;
     border: none;
 }
 
-.main_button2:hover {
+.main_button2:hover{
     background-color: white;
     color: var(--green_detail);
 }
@@ -248,81 +224,80 @@ h1 {
 
 /*ORADORES*/
 
-.oradores_title {
+.oradores_title{
     display: flex;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
 }
 
-.oradores_title h3 {
+.oradores_title h3{
     text-transform: uppercase;
-    width: auto;
+    width:auto;
     margin: 0 auto;
     font-size: 0.7rem;
     font-weight: 100;
 }
 
-.target_title {
-    width: auto;
-    margin: 1rem auto;
+.target_title{
+    width:auto;
+    margin:1rem auto;
     font-size: 1rem;
     font-weight: bolder;
 }
 
 
-.title_bold {
+.title_bold{
     font-size: 1.6rem;
-    font-weight: bolder;
+    font-weight:bolder;
     line-height: 2rem;
 }
 
-.oradores_targets {
+.oradores_targets{
     margin: 0 auto;
     display: flex;
     flex-wrap: row wrap;
     width: 75%;
 }
 
-.target {
-    margin: 1.2%;
-    margin-top: 0%;
-    margin-bottom: 5%;
-    border: solid 1px #DFDFDF;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px var(--lightgray);
+.target{
+margin:1.2%;
+margin-top: 0%;
+margin-bottom: 5%;
+border: solid 1px #DFDFDF;
+border-radius: 5px;
+overflow: hidden;
+box-shadow: 5px 5px 5px var(--lightgray);
 
 }
 
-.target_title {
+.target_title{
     margin-top: 0.2rem;
 }
 
-.target_img {
+.target_img{
     width: 100%;
     height: auto;
     max-height: 55%;
     overflow: hidden;
 }
 
-.oradores_targets img {
+.oradores_targets img{
     width: 100%;
 }
 
-.target_description {
+.target_description{
     padding: 1rem;
     padding: 3%;
     margin-top: 1.2rem;
-}
+    }
 
-.target_description p,
-.about_BA_text p {
+.target_description p, .about_BA_text p{
     font-size: 0.8rem;
     line-height: 1.3rem;
 }
 
-.target_tag {
+.target_tag{
     font-weight: bold;
     font-size: 0.7rem;
     padding: 3px;
@@ -330,32 +305,32 @@ h1 {
     color: white;
 }
 
-.target_tagJs {
+.target_tagJs{
     background-color: #FEC107;
     color: black;
 }
 
-.target_tagReact {
+.target_tagReact{
     background-color: #15A2B4;
 }
 
-.target_tagBusiness {
+.target_tagBusiness{
     background-color: #6C757E;
 }
 
-.target_tagStartUps {
+.target_tagStartUps{
     background-color: #DF3444;
 }
 
 /*PANTALLA DIVIDIDA*/
 
-.about_BA {
-    display: flex;
+.about_BA{
+    display:flex;
     flex-wrap: row wrap;
     min-height: 50vh;
 }
 
-.about_BA_img {
+.about_BA_img{
     width: 50vw;
     background-image: url("./assets/catalinas.jpg");
     background-size: cover;
@@ -363,30 +338,28 @@ h1 {
     background-position-x: 75%;
 }
 
-.about_img_opcional {
-    display: none;
+.about_img_opcional{
+    display:none;
 }
 
-.about_BA_text {
+.about_BA_text{
     width: 50vw;
     background-color: var(--color_ppl);
     padding: 0.4rem 1rem;
 }
 
-.about_BA_text p,
-h4,
-.about_BA_button {
+.about_BA_text p, h4, .about_BA_button{
     color: white;
     margin: 4%;
 }
 
-.about_BA_text h4 {
+.about_BA_text h4{
     font-size: 1.5rem;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
 }
 
-.about_BA_button {
+.about_BA_button{
     font-size: 0.8rem;
     font-weight: lighter;
     background: rgba(0, 0, 0, 0);
@@ -395,35 +368,34 @@ h4,
 
 /*FORMULARIO*/
 
-.form {
+.form{
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     width: 50vw;
 }
 
-.form_span {
-    text-decoration: underline dotted;
+.form_span{
+    text-decoration:underline dotted;
 }
 
-.form_text,
-.form_input {
+.form_text, .form_input{
     font-size: 0.8rem;
 }
 
-.form_text_end {
+.form_text_end{
     font-size: 0.75rem;
 }
 
 /*FOOTER*/
 
-footer {
+footer{
     display: flex;
     flex-wrap: row wrap;
     align-items: center;
 
 }
 
-footer div {
+footer div{
     display: flex;
     flex-wrap: row wrap;
     justify-content: space-around;
@@ -431,142 +403,137 @@ footer div {
     width: 100%;
     height: 14vh;
     margin: 0px auto;
-    color: white;
-    background: linear-gradient(to right, #1C3643, #1E5372);
+    color:white;
+    background: linear-gradient(to right, #1C3643, #1E5372) ;
 
 }
 
-footer a {
+footer a{
     font-size: 0.9rem;
     max-width: 10%;
     text-align: center;
     color: white;
 }
-
 /*MEDIA QUERIES*/
 
-@media screen and (max-width:1110px) {
-    .nav_container_a {
+@media screen and (max-width:1110px){
+    .nav_container_a{
         width: 65vw;
     }
 }
 
-@media screen and (max-width:1049px) {
-    nav_a {
+@media screen and (max-width:1049px){
+    nav_a{
         font-size: 0.8rem;
         max-width: 150px;
     }
 
-    .main_text {
+    .main_text{
         width: 50%;
     }
 }
 
 @media screen and (min-width: 1000px) {
 
-    .tittle {
+    .tittle{
         font-size: 1.2rem;
     }
 
-    .main_text {
+    .main_text{
         margin-right: 10%;
     }
 
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:991px){
 
-    .header_nav {
+    .header_nav{
         padding-left: 0%;
         padding-right: 0%;
     }
-
-    .nav_container_a {
+    .nav_container_a{
         background-color: var(--color_ppl);
         width: 100%;
         margin-left: 0px;
     }
+    .nav_a{
+        border-bottom:1px solid var(--lightgray);
+    }    
 
-    .nav_a {
-        border-bottom: 1px solid var(--lightgray);
-    }
-
-    .nav_a,
-    .nav_a_tickets {
+    .nav_a, .nav_a_tickets{
         max-width: 100%;
-        padding: 8px;
+        padding:8px;
     }
-
-    .oradores_targets {
+    
+    .oradores_targets{
         width: 85%;
     }
 
-    .form {
+    .form{
         width: 70%;
     }
 
-    footer {
-        height: fit-content;
+    footer{
+        height:fit-content;
     }
 
-    footer div {
+    footer div{
         flex-direction: column;
         height: fit-content;
         padding: 1rem;
     }
 
-    footer a {
+    footer a{
         max-width: none;
         margin: 1% auto;
     }
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and  (max-width:767px){
 
-    .main_text {
+    .main_text{
         width: 60%;
     }
 
-    .oradores_targets {
+    .oradores_targets{
         flex-direction: column;
     }
 
-    .target {
+    .target{
         display: block;
     }
 
-    .about_BA {
-        display: block;
-    }
+   .about_BA{
+    display: block;
+   }
 
-    .about_BA_img,
-    .about_BA_text {
-        width: 100%;
-    }
+   .about_BA_img, .about_BA_text{
+    width: 100%;
+   }
 
-    .about_BA_img {
-        height: 50vh;
-    }
+   .about_BA_img{
+    height: 50vh;
+   }
 
-    .about_BA_text {
-        height: auto;
-    }
+   .about_BA_text{
+    height: auto;
+   }
 
-    .form {
-        width: 100%;
-    }
+   .form{
+    width: 100%;
+   }
 }
 
-@media screen and (max-width:480px) {
-    .main_text {
+@media screen and (max-width:480px){
+    .main_text{
         width: 90%;
     }
 }
 
-@media screen and (max-width:277px) {
-    .main_text {
-        top: 10vh;
+@media screen and (max-width:277px){
+    .main_text{
+        top:10vh;
         width: 100%;
     }
 }
