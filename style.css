@@ -489,7 +489,11 @@ footer a{
     }
 
     .oradores_targets{
-        flex-wrap: column wrap;
+        flex-direction: column;
+    }
+
+    .target{
+        display: block;
     }
 
    .about_BA{
@@ -508,5 +512,14 @@ footer a{
     height: auto;
    }
 
- 
+   .form{
+    width: 100%;
+   }
+}
+
+@media scree and (max-width:277px){
+    .main_text{
+        width: 100%;
+        background-color:red;
+    }
 }
