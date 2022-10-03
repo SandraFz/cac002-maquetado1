@@ -181,6 +181,7 @@ main{
     text-align: right;
     line-height: 1.5em;
     z-index: 8;
+    backdrop-filter: blur(2px);
 }
 
 h1{
@@ -218,6 +219,7 @@ h1{
 .main_button2:hover{
     background-color: white;
     color: var(--green_detail);
+    transform: scale(105%);
 }
 
 
