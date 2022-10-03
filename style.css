@@ -540,3 +540,14 @@ footer a{
         flex: 1 0 100%;
     }
 }
+
+@media screen and (orientation:landscape) {
+        
+    .main_image1, .main_image2, .main_image3{
+        height: 100vh;
+    }
+
+    .oradores_targets{
+        width: 70%;
+    }
+}
