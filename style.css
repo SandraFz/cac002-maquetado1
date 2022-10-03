@@ -544,7 +544,7 @@ footer a{
 @media screen and (orientation:landscape) {
         
     .main_image1, .main_image2, .main_image3{
-        height: 100vh;
+        height: 110vh;
     }
 
     .oradores_targets{
