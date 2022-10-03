@@ -193,8 +193,7 @@ h1{
 }
 
 .button{
-    width: 145px;;
-    padding:0.6rem;
+    padding:0.5rem;
     margin:0.5rem;
     border-radius: 5px;
     font-size: 1rem;
@@ -535,5 +534,9 @@ footer a{
     .main_text{
         top:10vh;
         width: 100%;
+    }
+
+    .info{
+        flex: 1 0 100%;
     }
 }
