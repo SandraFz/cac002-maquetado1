@@ -417,6 +417,7 @@ h4,
 
 /*FORMULARIO*/
 
+
 .form {
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -583,6 +584,11 @@ footer a {
 @media screen and (max-width:480px) {
     .main_text {
         width: 90%;
+    }
+
+    .form-container{
+        display:flex;
+        flex-direction: column;
     }
 }
 
