@@ -1,0 +1,52 @@
+.contenedor{
+    width: 55%;
+    margin:0 auto;
+    border:2px solid red;
+}
+
+.targets{
+    border: 2px solid violet;
+    display: flex;
+ flex-wrap: row wrap;
+ justify-content: space-between;
+}
+
+.card{
+ width: 30%;
+ border: solid 2px;
+}
+
+.title, .target_text p{
+    width: 100%;
+    text-align: center;
+}
+
+.student{
+    border-color: #0D6EFD;
+}
+
+.student .title{
+    background-color: #0D6EFD;
+    
+}
+
+.trainee{
+    border-color:#0DCAF0;
+}
+
+.trainee .title{
+    background-color: #0DCAF0;
+}
+
+.junior{
+    border-color: #FFC107;
+}
+
+.junior .title{
+    background-color: #FFC107;
+}
+
+
+
+
+
