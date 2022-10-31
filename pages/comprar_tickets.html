@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conferencia</title>
-    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
@@ -55,7 +54,7 @@
                                 Tienen un descuento
                             </p>
                             <p>
-                                <span class="target_percentage">80%</span>
+                                <span class="target_percentage" id="estudiante">80%</span>
                             </p>
                             <p>
                                 <small>*Presentar documentación</small>
@@ -69,7 +68,7 @@
                                 Tienen un descuento
                             </p>
                             <p>
-                                <span class="target_percentage">50%</span>
+                                <span class="target_percentage" id="trainee">50%</span>
                             </p>
                             <p>
                                 <small>*Presentar documentación</small>
@@ -83,7 +82,7 @@
                                 Tienen un descuento
                             </p>
                             <p>
-                                <span class="target_percentage">15%</span>
+                                <span class="target_percentage" id="junior">15%</span>
                             </p>
                             <p>
                                 <small>*Presentar documentación</small>
@@ -94,26 +93,26 @@
             <div class="form">
                 <div class="oradores_title">
                     <h3>
-                        Venta <br><span class="title_bold">Valor de tickets $200</span>
+                        Venta <br><span class="title_bold">Valor de tickets $<span id="valor">200</span></span>
                     </h3>
                     <form action="">
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
-                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Nombre" id="name">
+                        <input type="text" placeholder="Apellido" id="lastname">
+                        <input type="email" placeholder="Email" id="email">
                         <label for="cantidad">
-                            <input type="text" name="cantidad" placeholder="Cantidad">
+                            <input type="text" name="cantidad" placeholder="Cantidad" id="cantidad" value="1">
                         </label>
                         <label for="categoria">
-                            <select name="categoria" id="">
-                                <option>--Seleccione--</option>
-                                <option>Estudiante</option>
-                                <option>Trainee</option>
-                                <option>Junior</option>
+                            <select name="categoria" id="categoria">
+                                <option value="general">general</option>
+                                <option value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
                             </select>
                         </label>
-                        <input type="text" id="" value="Total a pagar: $" readonly>
-                        <input type="button" name="" id="" value="Borrar">
-                        <input type="submit" value="Resumen">
+                        <input type="text" id="total" value="Total a pagar: $200" readonly>
+                        <input type="reset" name="" id="" value="Borrar">
+                        <input type="button" value="Resumen" id="resumen">
                     </form>
                 </div>
             </div>
@@ -133,7 +132,8 @@
             <a href="">Estudiantes</a>
         </div>
     </footer>
-    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../pages/comprar_tickets.js"></script>
 </body>
 
 </html>
