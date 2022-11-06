@@ -13,14 +13,13 @@ let email = document.getElementById("email");
 let cantidad = document.getElementById("cantidad");
 //console.log("Cantidad fuera del método: " + cantidad + typeof cantidad)
 let resumen = document.getElementById("resumen");
+let reset = document.getElementById("reset");
 let inputs = document.querySelectorAll(".form-control");
 const arr = Array.from(inputs);
 
 console.log("querySelectorAll return this: ");
 console.log(arr)
 console.log(typeof arr)
-
-
 
 //VALIDACIÓN
 
@@ -56,11 +55,9 @@ function validacion() {
 
     let i;
 
-    var areInvalid = 0;
+    let areInvalid = 0;
 
-    /*if (inputs[i].value == ""){
-        alert("Complete todos los campos")
-    }*/
+    
     
     
     for (i = 0; i < inputs.length; i++){
@@ -69,11 +66,20 @@ function validacion() {
             
             inputs[i].classList.add("is-invalid");
         }
-        areInvalid += i;
+        
+         areInvalid += i;
 
     }
 
-    alert("Complete todos los campos")
+    if(areInvalid > 0){
+        alert("Complete todos los campos")
+
+    }
+    /*if (inputs[i].value == ""){
+        alert("Complete todos los campos")
+    }*/
+
+    //alert("Complete todos los campos")
     
 
     /*let oneIsInvalid = document.querySelector(".is-invalid")
@@ -96,27 +102,14 @@ function validacion() {
       if (arr.some(isNotValid) = true) {
         alert("Complete todos los campos")
       }
-
-        
         
     }*/
-    
-    
 
     /*while (arr.some(isNotValid)){
         areInvalid = 0;
         alert("Complete todos los campos")
     }*/
     
-
-    /*for (i = 0; i < inputs.length; i++){
-        if (inputs[i].value == "") {
-            inputs[i].classList.add("is-invalid");
-        }
-        areInvalid += i;
-
-        if ()
-    }*/
 
     /*mensajeError();
 
@@ -134,20 +127,13 @@ function validacion() {
             alert("Complete todos los campos");
         }
     }*/
-
-
 }
-console.log(inputs)
 
 function quitarError() {
-   
         for (i = 0; i < inputs.length; i++) {
             inputs[i].classList.remove("is-invalid")
         }
     }
-
-console.log("quitarError dice: " + quitarError)
-
 
 //CÁLCULO DEL MONTO TOTAL
 
@@ -155,7 +141,6 @@ function calculoTotal() {
 
     quitarError();
     validacion();
-
 
     console.log("este es el nombre dentro del método: " + nombre)
     let totalBruto = valor * cantidad.value;
@@ -193,21 +178,5 @@ function calculoTotal() {
     total.innerHTML = totalPorCateg;
 }
 
-
-
-//ENVÍO EL VALOR AL INPUT "TOTAL A PAGAR"
-
-/*function mostrarTotal() {
-
-    let $total = calculoTotal();
-    let totalInput = document.getElementById("total");
-    totalInput.value = "Total a pagar: $" + totalPorCateg;
-
-
-
-    console.log("El $total es: " + $total);
-    console.log("El totalInput es: " + totalInput)
-    console.log(totalInput + $total)
-}*/
-
 resumen.addEventListener('click', calculoTotal);
+reset.addEventListener('click', quitarError);

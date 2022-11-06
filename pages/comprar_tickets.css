@@ -1,11 +1,9 @@
 .contenedor{
     width: 50%;
     margin:0 auto;
-    border:2px solid red;
 }
 
 .targets{
-    border: 2px solid violet;
     display: flex;
  flex-wrap: row wrap;
  justify-content: space-between;
@@ -64,12 +62,12 @@
 
 .form, .cantidad, .categoria{
     width: 100%;
-    border-color: green;
     flex-wrap: column wrap;
 }
 
 .form{
     text-align: center;
+    border: none;
 }
 
 .form h3{
@@ -114,8 +112,19 @@ form{
     background-color: #CFE2FF;
     color: #0865C3;
     margin-top: 1rem; 
+    border-radius: 4px;
 }
 
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
 
+.button{
+    width: 49%;
+    margin: 1rem 0%;
+}
 
 
