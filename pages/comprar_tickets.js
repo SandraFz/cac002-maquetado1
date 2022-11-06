@@ -25,7 +25,7 @@ console.log(typeof arr)
 
 function validacion() {
 
-    /*if(nombre.value == ""){
+    if(nombre.value == ""){
         nombre.classList.add("is-invalid");
         alert("Ingrese su nombre");
         return
@@ -36,29 +36,33 @@ function validacion() {
         alert("Ingrese su apellido");
         return
 
-    } */
+    } 
 
     /*const emailValid = email => {return ^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(email)}*/
 
-    /*if (email.value == ""){
+    if (email.value == ""){
         email.classList.add("is-invalid");
         alert("Ingrese su email");
         return
     }
 
-
-    if (cantidad.value == ""){
+    if (cantidad.value == "" ){
         cantidad.classList.add("is-invalid");
         alert("Ingrese la cantidad");
         return
+    }
+
+    /*if (typeof cantidad.value != Number){
+        cantidad.classList.add("is-invalid");
+        alert("Ingrese correctamente la cantidad");
+        return
     }*/
 
-    let i;
+    //Intentos fallidos de reducir el código en validaciones
+
+    /*let i;
 
     let areInvalid = 0;
-
-    
-    
     
     for (i = 0; i < inputs.length; i++){
         
@@ -74,7 +78,7 @@ function validacion() {
     if(areInvalid > 0){
         alert("Complete todos los campos")
 
-    }
+    }*/
     /*if (inputs[i].value == ""){
         alert("Complete todos los campos")
     }*/
@@ -142,12 +146,11 @@ function calculoTotal() {
     quitarError();
     validacion();
 
-    console.log("este es el nombre dentro del método: " + nombre)
     let totalBruto = valor * cantidad.value;
 
-    console.log("Esta es el valor dentro del método: " + valor + typeof valor);
-    console.log("Esta es la cantidad dentro del método: " + cantidad + typeof cantidad);
-    console.log("Esta es el totalBruto dentro del método: " + totalBruto + typeof totalBruto);
+                console.log("Esta es el valor dentro del método: " + valor + typeof valor);
+                console.log("Esta es la cantidad dentro del método: " + cantidad + typeof cantidad);
+                console.log("Esta es el totalBruto dentro del método: " + totalBruto + typeof totalBruto);
 
     let categoria = document.getElementById("categoria").value;
     let totalPorCateg;
@@ -157,9 +160,9 @@ function calculoTotal() {
         case "estudiante":
 
             totalPorCateg = totalBruto - ((estudianteDesc / 100) * totalBruto)
-            console.log("estudiantes / 100 " + (totalBruto - ((estudianteDesc / 100) * totalBruto)))
-            console.log("Este es el total Bruto de estudiante: " + totalBruto);
-            console.log("totalPorCateg :" + totalPorCateg)
+                        console.log("estudiantes / 100 " + (totalBruto - ((estudianteDesc / 100) * totalBruto)))
+                        console.log("Este es el total Bruto de estudiante: " + totalBruto);
+                        console.log("totalPorCateg :" + totalPorCateg)
             break;
 
         case "trainee":
