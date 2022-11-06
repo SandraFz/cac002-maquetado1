@@ -124,9 +124,13 @@ form{
     align-items: center;
 }
 
-#total{
+#total, #pesos{
     font-size: 2rem;
+}
+
+#pesos{
     margin-left: 1rem;
+
 }
 
 .buttons{

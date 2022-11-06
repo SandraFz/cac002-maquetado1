@@ -16,16 +16,15 @@ let resumen = document.getElementById("resumen");
 let reset = document.getElementById("reset");
 let inputs = document.querySelectorAll(".form-control");
 const arr = Array.from(inputs);
-
-console.log("querySelectorAll return this: ");
-console.log(arr)
-console.log(typeof arr)
+//console.log("querySelectorAll return this: ");
+//console.log(arr)
+//console.log(typeof arr)
 
 //VALIDACIÓN
 
 function validacion() {
 
-    if(nombre.value == ""){
+    /*if(nombre.value == ""){
         nombre.classList.add("is-invalid");
         alert("Ingrese su nombre");
         return
@@ -36,11 +35,11 @@ function validacion() {
         alert("Ingrese su apellido");
         return
 
-    } 
+    } */
 
     /*const emailValid = email => {return ^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(email)}*/
 
-    if (email.value == ""){
+    /*if (email.value == ""){
         email.classList.add("is-invalid");
         alert("Ingrese su email");
         return
@@ -50,7 +49,7 @@ function validacion() {
         cantidad.classList.add("is-invalid");
         alert("Ingrese la cantidad");
         return
-    }
+    }*/
 
     /*if (typeof cantidad.value != Number){
         cantidad.classList.add("is-invalid");
@@ -58,9 +57,9 @@ function validacion() {
         return
     }*/
 
-    //Intentos fallidos de reducir el código en validaciones
-
-    /*let i;
+    //REDUCCIÓN DEL CÓDIGO CON UN BUCLE
+    
+    let i;
 
     let areInvalid = 0;
     
@@ -69,68 +68,19 @@ function validacion() {
         if (inputs[i].value == "") {
             
             inputs[i].classList.add("is-invalid");
+            areInvalid +=1
         }
-        
-         areInvalid += i;
-
     }
 
     if(areInvalid > 0){
         alert("Complete todos los campos")
+    }
+}
 
-    }*/
-    /*if (inputs[i].value == ""){
-        alert("Complete todos los campos")
-    }*/
-
-    //alert("Complete todos los campos")
-    
-
-    /*let oneIsInvalid = document.querySelector(".is-invalid")
-    console.log("oneIsInvalid")
-    console.log(typeof oneIsInvalid)
-    console.log()
-    if(oneIsInvalid == 0){
-        alert("Complete todos los campos")
-    }*/
-
-    /**/
-
-   /*function isNotValid(arr){
-        return inputs[i].classList > 0;
-    }*/
-
-    /*function mensajeError(arr){
-
-
-      if (arr.some(isNotValid) = true) {
-        alert("Complete todos los campos")
-      }
-        
-    }*/
-
-    /*while (arr.some(isNotValid)){
-        areInvalid = 0;
-        alert("Complete todos los campos")
-    }*/
-    
-
-    /*mensajeError();
-
-    function mensajeError() {
-
-        //arr.some(isInvalid)
-
-        const classListI = Array.from(inputs[i].classList)
-
-        function isInvalid(){
-            let i;
-            return arr[i].value == ""
-        }
-        if (isInvalid == true) {
-            alert("Complete todos los campos");
-        }
-    }*/
+function siError(){
+   if(validacion()>0){
+    alert("Complete todos los datos")
+   }
 }
 
 function quitarError() {
@@ -144,13 +94,13 @@ function quitarError() {
 function calculoTotal() {
 
     quitarError();
-    validacion();
-
+    //validacion();
+    siError();
     let totalBruto = valor * cantidad.value;
 
-                console.log("Esta es el valor dentro del método: " + valor + typeof valor);
-                console.log("Esta es la cantidad dentro del método: " + cantidad + typeof cantidad);
-                console.log("Esta es el totalBruto dentro del método: " + totalBruto + typeof totalBruto);
+                //console.log("Esta es el valor dentro del método: " + valor + typeof valor);
+                //console.log("Esta es la cantidad dentro del método: " + cantidad + typeof cantidad);
+                //console.log("Esta es el totalBruto dentro del método: " + totalBruto + typeof totalBruto);
 
     let categoria = document.getElementById("categoria").value;
     let totalPorCateg;
@@ -160,9 +110,9 @@ function calculoTotal() {
         case "estudiante":
 
             totalPorCateg = totalBruto - ((estudianteDesc / 100) * totalBruto)
-                        console.log("estudiantes / 100 " + (totalBruto - ((estudianteDesc / 100) * totalBruto)))
-                        console.log("Este es el total Bruto de estudiante: " + totalBruto);
-                        console.log("totalPorCateg :" + totalPorCateg)
+                        //console.log("estudiantes / 100 " + (totalBruto - ((estudianteDesc / 100) * totalBruto)))
+                        //console.log("Este es el total Bruto de estudiante: " + totalBruto);
+                        //console.log("totalPorCateg :" + totalPorCateg)
             break;
 
         case "trainee":
