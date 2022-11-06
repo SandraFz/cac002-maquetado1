@@ -58,6 +58,7 @@ function validacion() {
     }*/
 
     //REDUCCIÓN DEL CÓDIGO CON UN BUCLE
+    //FALTA VALIDAR EL MAIL Y LA CANTIDAD
     
     let i;
 
@@ -77,12 +78,6 @@ function validacion() {
     }
 }
 
-function siError(){
-   if(validacion()>0){
-    alert("Complete todos los datos")
-   }
-}
-
 function quitarError() {
         for (i = 0; i < inputs.length; i++) {
             inputs[i].classList.remove("is-invalid")
@@ -94,8 +89,7 @@ function quitarError() {
 function calculoTotal() {
 
     quitarError();
-    //validacion();
-    siError();
+    validacion();
     let totalBruto = valor * cantidad.value;
 
                 //console.log("Esta es el valor dentro del método: " + valor + typeof valor);
