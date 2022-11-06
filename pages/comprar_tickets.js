@@ -53,9 +53,10 @@ function validacion() {
         alert("Ingrese la cantidad");
         return
     }*/
+
     let i;
 
-    let areInvalid = 0;
+    var areInvalid = 0;
 
     /*if (inputs[i].value == ""){
         alert("Complete todos los campos")
@@ -196,7 +197,7 @@ function calculoTotal() {
 
 //ENVÍO EL VALOR AL INPUT "TOTAL A PAGAR"
 
-function mostrarTotal() {
+/*function mostrarTotal() {
 
     let $total = calculoTotal();
     let totalInput = document.getElementById("total");
@@ -207,6 +208,6 @@ function mostrarTotal() {
     console.log("El $total es: " + $total);
     console.log("El totalInput es: " + totalInput)
     console.log(totalInput + $total)
-}
+}*/
 
 resumen.addEventListener('click', calculoTotal);
