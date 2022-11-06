@@ -1,6 +1,11 @@
+main{
+    padding-bottom: 0%;
+}
+
 .contenedor{
     width: 50%;
     margin:0 auto;
+    
 }
 
 .targets{
@@ -77,6 +82,7 @@
 
 form{
     width: 100%;
+
 }
 
 .datos, .choises{
@@ -92,21 +98,21 @@ form{
 #email{
     margin-top: 1rem;
 }
-/*
-.choises{
-    margin-top: 1rem;
-    flex-wrap: column wrap;
-    justify-content: ;
-}*/ 
 
-.cant{
-    display: block;
-    margin-left: 0%;
-     margin-right: auto;
+.cantidad, .categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+#categoria{
+    width: 100%;
 }
 
 .total{
     width: 100%;
+    height: 3rem;
     padding: 0.5rem;
     border-color: 1px solid #B6D4FE;
     background-color: #CFE2FF;
@@ -124,7 +130,51 @@ form{
 
 .button{
     width: 49%;
-    margin: 1rem 0%;
+    padding: 0.4rem;
+    margin: 1rem 0% 0%;
 }
 
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1000px) {
+ .contenedor{
+    width: 80%;
+ }   
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .targets{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    .datos, .choises{
+        flex-direction: column;
+    }
+
+    #name, #lastname, .cantidad, .categoria {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .contenedor{
+        width: 90%;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
 
