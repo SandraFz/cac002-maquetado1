@@ -48,69 +48,81 @@
         <div class="contenedor">
             <div class="targets">
                 <div class="card student">
-                        <div class="title">Estudiante</div>
-                        <div class="target_text">
-                            <p>
-                                Tienen un descuento
-                            </p>
-                            <p>
-                                <span class="target_percentage" id="estudiante">80%</span>
-                            </p>
-                            <p>
-                                <small>*Presentar documentación</small>
-                            </p>
+                    <div class="title">Estudiante</div>
+                    <div class="target_text">
+                        <p>
+                            Tienen un descuento
+                        </p>
+                        <p>
+                            <span class="target_percentage" id="estudiante">80%</span>
+                        </p>
+                        <p>
+                            <small>*Presentar documentación</small>
+                        </p>
                     </div>
                 </div>
                 <div class="card trainee">
-                        <div class="title">Trainee</div>
-                        <div class="target_text">
-                            <p>
-                                Tienen un descuento
-                            </p>
-                            <p>
-                                <span class="target_percentage" id="trainee">50%</span>
-                            </p>
-                            <p>
-                                <small>*Presentar documentación</small>
-                            </p>
+                    <div class="title">Trainee</div>
+                    <div class="target_text">
+                        <p>
+                            Tienen un descuento
+                        </p>
+                        <p>
+                            <span class="target_percentage" id="trainee">50%</span>
+                        </p>
+                        <p>
+                            <small>*Presentar documentación</small>
+                        </p>
                     </div>
                 </div>
                 <div class="card junior">
-                        <div class="title">Junior</div>
-                        <div class="target_text">
-                            <p>
-                                Tienen un descuento
-                            </p>
-                            <p>
-                                <span class="target_percentage" id="junior">15%</span>
-                            </p>
-                            <p>
-                                <small>*Presentar documentación</small>
-                            </p>
+                    <div class="title">Junior</div>
+                    <div class="target_text">
+                        <p>
+                            Tienen un descuento
+                        </p>
+                        <p>
+                            <span class="target_percentage" id="junior">15%</span>
+                        </p>
+                        <p>
+                            <small>*Presentar documentación</small>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="form">
+                <h3>
+                    Venta <br><span class="title_bold">Valor de tickets $<span id="valor">200</span></span>
+                </h3>
                 <div class="oradores_title">
-                    <h3>
-                        Venta <br><span class="title_bold">Valor de tickets $<span id="valor">200</span></span>
-                    </h3>
+
                     <form action="">
-                        <input type="text" placeholder="Nombre" id="name">
-                        <input type="text" placeholder="Apellido" id="lastname">
-                        <input type="email" placeholder="Email" id="email">
-                        <label for="cantidad">
-                            <input type="text" name="cantidad" placeholder="Cantidad" id="cantidad">
-                        </label>
-                        <label for="categoria">
-                            <select name="categoria" id="categoria">
-                                <option value="general">general</option>
-                                <option value="estudiante">Estudiante</option>
-                                <option value="trainee">Trainee</option>
-                                <option value="junior">Junior</option>
-                            </select>
-                        </label>
-                        <input type="text" id="total" value="Total a pagar: $200" readonly>
+                        <div class="datos">
+                            <input type="text" placeholder="Nombre" id="name" class="form-control">
+                            <input type="text" placeholder="Apellido" id="lastname" class="form-control">
+                        </div>
+                        <input type="email" placeholder="Email" id="email" class="form-control">
+                        <div class="choises">
+                            <div class="cantidad">
+                                <label for="cantidad" class="cant">Cantidad</label>
+                                <input type="text" name="cantidad" placeholder="Cantidad" id="cantidad"
+                                    class="form-control">
+
+                            </div>
+                            <div class="categoria">
+                                <label for="categoria">Categoría</label>
+                                <select name="categoria" id="categoria">
+                                    <option value="general">general</option>
+                                    <option value="estudiante">Estudiante</option>
+                                    <option value="trainee">Trainee</option>
+                                    <option value="junior">Junior</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="total">
+                            Total a pagar: $<span id="total">200</span>
+                        </div>
+                        <!--<input type="text" id="total" value="Total a pagar: $200" readonly>-->
                         <input type="reset" name="" id="" value="Borrar">
                         <input type="button" value="Resumen" id="resumen">
                     </form>

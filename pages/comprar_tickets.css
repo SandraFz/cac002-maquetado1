@@ -1,5 +1,5 @@
 .contenedor{
-    width: 55%;
+    width: 50%;
     margin:0 auto;
     border:2px solid red;
 }
@@ -14,11 +14,22 @@
 .card{
  width: 30%;
  border: solid 2px;
+ margin-top: 1rem;
+
+}
+
+.title{
+    color:white;
 }
 
 .title, .target_text p{
     width: 100%;
     text-align: center;
+}
+
+.target_text{
+    margin-top: 5%;
+    font-size: 0.9rem;
 }
 
 .student{
@@ -46,6 +57,64 @@
     background-color: #FFC107;
 }
 
+.target_percentage{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form, .cantidad, .categoria{
+    width: 100%;
+    border-color: green;
+    flex-wrap: column wrap;
+}
+
+.form{
+    text-align: center;
+}
+
+.form h3{
+    font-size: 1rem;
+   margin-top: 1rem;
+}
+
+form{
+    width: 100%;
+}
+
+.datos, .choises{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#name, #lastname, .cantidad, .categoria {
+    width: 49%;
+}
+
+#email{
+    margin-top: 1rem;
+}
+/*
+.choises{
+    margin-top: 1rem;
+    flex-wrap: column wrap;
+    justify-content: ;
+}*/ 
+
+.cant{
+    display: block;
+    margin-left: 0%;
+     margin-right: auto;
+}
+
+.total{
+    width: 100%;
+    padding: 0.5rem;
+    border-color: 1px solid #B6D4FE;
+    background-color: #CFE2FF;
+    color: #0865C3;
+    margin-top: 1rem; 
+}
 
 
 
