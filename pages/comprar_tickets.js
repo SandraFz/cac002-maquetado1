@@ -11,14 +11,14 @@ let nombre = document.getElementById("name");
 let lastName = document.getElementById("lastname");
 let email = document.getElementById("email");
 let cantidad = document.getElementById("cantidad");
-//console.log("Cantidad fuera del método: " + cantidad + typeof cantidad)
+        //console.log("Cantidad fuera del método: " + cantidad + typeof cantidad)
 let resumen = document.getElementById("resumen");
 let reset = document.getElementById("reset");
 let inputs = document.querySelectorAll(".form-control");
 const arr = Array.from(inputs);
-//console.log("querySelectorAll return this: ");
-//console.log(arr)
-//console.log(typeof arr)
+        //console.log("querySelectorAll return this: ");
+        //console.log(arr)
+        //console.log(typeof arr)
 
 //VALIDACIÓN
 
