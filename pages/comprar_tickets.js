@@ -34,7 +34,6 @@ function validacion() {
         lastName.classList.add("is-invalid");
         alert("Ingrese su apellido");
         return
-
     } */
 
     /*const emailValid = email => {return ^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(email)}*/
@@ -76,18 +75,28 @@ function validacion() {
     if(areInvalid > 0){
         alert("Complete todos los campos")
     }
+
+    /*if(typeof parseInt(cantidad) !== Number){
+            alert("La cantidad debe ser un número")
+            inputs[i].classList.add("is-invalid"); 
+        return  
+    }
+
+    console.log("Cantidad:")
+    console.log(typeof cantidad)*/
 }
 
 function quitarError() {
         for (i = 0; i < inputs.length; i++) {
-            inputs[i].classList.remove("is-invalid")
+            inputs[i].classList.remove("is-invalid");
+            total.innerHTML="...";
         }
     }
 
 //CÁLCULO DEL MONTO TOTAL
 
 function calculoTotal() {
-
+    
     quitarError();
     validacion();
     let totalBruto = valor * cantidad.value;
@@ -117,7 +126,7 @@ function calculoTotal() {
             totalPorCateg = totalBruto - ((parseInt(juniorDesc) / 100) * totalBruto);
             break;
 
-        default:
+       default:
             totalPorCateg = totalBruto;
             break;
     };
