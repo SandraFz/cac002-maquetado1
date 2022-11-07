@@ -4,8 +4,7 @@ main{
 
 .contenedor{
     width: 50%;
-    margin:0 auto;
-    
+    margin:0 auto; 
 }
 
 .targets{
@@ -156,7 +155,7 @@ form{
 
 @media screen and (max-width: 600px) {
     .contenedor{
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -166,7 +165,7 @@ form{
     }
 
     .card{
-        width: 50%;
+        width: 80%;
         margin: 1rem auto;
     }
 
@@ -182,7 +181,7 @@ form{
 
 @media screen and (max-width: 315px) {
     .contenedor{
-        width: 90%;
+        width: 100%;
     }
 
     .card{
