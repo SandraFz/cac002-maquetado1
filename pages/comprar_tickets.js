@@ -24,7 +24,7 @@ const arr = Array.from(inputs);
 
 function validacion() {
 
-    /*if(nombre.value == ""){
+    if(nombre.value == ""){
         nombre.classList.add("is-invalid");
         alert("Ingrese su nombre");
         return
@@ -34,13 +34,24 @@ function validacion() {
         lastName.classList.add("is-invalid");
         alert("Ingrese su apellido");
         return
-    } */
+    }
 
     /*const emailValid = email => {return ^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(email)}*/
 
-    /*if (email.value == ""){
+
+    if (email.value == ""){
         email.classList.add("is-invalid");
         alert("Ingrese su email");
+        return
+    }
+
+    const emailValid = (x) =>{return /^[^\s\.@]+@[^\s\.@]+\.[^\s\.@]/i.test(x)};
+
+//  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x);
+
+    if (!emailValid(email.value)){
+        email.classList.add("is-invalid");
+        alert("Ingrese un mail válido");
         return
     }
 
@@ -48,7 +59,16 @@ function validacion() {
         cantidad.classList.add("is-invalid");
         alert("Ingrese la cantidad");
         return
-    }*/
+    }
+
+    const cantValid = y => {return /[0-9]/.test(y)}
+
+    if (cantValid(cantidad.value)){
+        cantidad.classList.add("is-invalid");
+        alert("Ingrese correctamente la cantidad");
+        return
+    }
+
 
     /*if (typeof cantidad.value != Number){
         cantidad.classList.add("is-invalid");
@@ -59,7 +79,7 @@ function validacion() {
     //REDUCCIÓN DEL CÓDIGO CON UN BUCLE
     //FALTA VALIDAR EL MAIL Y LA CANTIDAD
     
-    let i;
+    /*let i;
 
     let areInvalid = 0;
     
@@ -75,7 +95,7 @@ function validacion() {
     if(areInvalid > 0){
         alert("Complete todos los campos")
     }
-
+*/
     /*if(typeof parseInt(cantidad) !== Number){
             alert("La cantidad debe ser un número")
             inputs[i].classList.add("is-invalid"); 
