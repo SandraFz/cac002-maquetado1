@@ -69,13 +69,6 @@ function validacion() {
         return
     }
 
-
-    /*if (typeof cantidad.value != Number){
-        cantidad.classList.add("is-invalid");
-        alert("Ingrese correctamente la cantidad");
-        return
-    }*/
-
     //REDUCCIÓN DEL CÓDIGO CON UN BUCLE
     //FALTA VALIDAR EL MAIL Y LA CANTIDAD
     
