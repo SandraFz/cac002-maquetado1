@@ -36,9 +36,6 @@ function validacion() {
         return
     }
 
-    /*const emailValid = email => {return ^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(email)}*/
-
-
     if (email.value == ""){
         email.classList.add("is-invalid");
         alert("Ingrese su email");
@@ -46,8 +43,6 @@ function validacion() {
     }
 
     const emailValid = (x) =>{return /^[^\s\.@]+@[^\s\.@]+\.[^\s\.@]/i.test(x)};
-
-//  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x);
 
     if (!emailValid(email.value)){
         email.classList.add("is-invalid");
