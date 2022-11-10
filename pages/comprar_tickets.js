@@ -63,7 +63,7 @@ function validacion() {
 
     const cantValid = y => {return /[0-9]/.test(y)}
 
-    if (cantValid(cantidad.value)){
+    if (!cantValid(cantidad.value)){
         cantidad.classList.add("is-invalid");
         alert("Ingrese correctamente la cantidad");
         return
