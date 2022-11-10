@@ -127,11 +127,11 @@ function calculoTotal() {
             break;
 
         case "trainee":
-            totalPorCateg = totalBruto - ((parseInt(traineeDesc) / 100) * totalBruto);
+            totalPorCateg = totalBruto - ((traineeDesc / 100) * totalBruto);
             break;
 
         case "junior":
-            totalPorCateg = totalBruto - ((parseInt(juniorDesc) / 100) * totalBruto);
+            totalPorCateg = totalBruto - ((juniorDesc / 100) * totalBruto);
             break;
 
        default:
